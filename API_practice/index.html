@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: beige ;
+        }
+        th,td{
+            border-bottom: 2px solid black;
+            border-right: 2px solid black;
+            padding: 5px;
+            background-color: aquamarine;
+        }
+        /* table{
+            border-top: 2px solid black;
+            border-left: 2px solid black;
+        } */
+
+    </style>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="./index.js"></script>
+</head> 
+<body>
+    <center>
+    <h1>Axios API demonstration</h1>
+    <br>
+    <label>User ID : </label><input type="text" id = "uid"><br><br>
+    <label >Name : </label>
+    <input type="text" id="name">
+    <br>
+    <br>
+    <label >Role: </label>
+    <input type="text" id="role">
+    <br>
+    <br>
+    <button id="get" onclick="getData()">Get</button>
+    <button id="insert" onclick="postData()">Insert</button>
+    <button id="delete" onclick=deleteData()>Delete</button>
+    <button id="update" onclick="putData()">Edit</button>
+    <br>
+    <br>
+    <table id="result"></table>
+</center>
+</body>
+</html>
